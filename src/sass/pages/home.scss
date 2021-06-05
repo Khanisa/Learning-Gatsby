@@ -8,6 +8,7 @@
     &__jobs {
         position: relative;
 
+
         &--container {
             padding-top: 6rem;
             padding-bottom: 3rem;
@@ -23,19 +24,21 @@
             padding-left: 1rem;
             padding-right: 1rem;
             text-align: center;
-
-            @media (min-width: 1280px) {
-                width: 58.333333%;
+            margin-bottom: 2.5rem;
+            @media (min-width: 640px) {
+                width: 83.333333%;
+            }
+            @media (min-width: 768px) {
+                width: 66.666667%;
+                margin-bottom: 4rem;
             }
             @media (min-width: 1024px) {
                 padding-left: 2.5rem;
                 padding-right: 2.5rem;
             }
-            @media (min-width: 768px) {
-                width: 66.666667%;
-            }
-            @media (min-width: 640px) {
-                width: 83.333333%;
+            @media (min-width: 1280px) {
+                width: 58.333333%;
+                margin-bottom: 5rem;
             }
         }
     }
