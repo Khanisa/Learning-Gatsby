@@ -7,7 +7,7 @@ import Hero from "../components/hero";
 
 const About = () => (
   <Layout>
-    <Seo title="Page two" />
+    <Seo title="About" />
     <div className="about">
       <Hero 
         heroText= "Who we are"
