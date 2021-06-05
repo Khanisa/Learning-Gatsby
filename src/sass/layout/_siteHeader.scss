@@ -1,0 +1,45 @@
+
+
+.siteHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background: transparent;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.25rem;
+
+        @media screen and (min-width: 768px) {
+            padding: 1.75rem;
+        }
+
+        .navbar-brand {
+            position: relative;
+            color: white;
+        }
+
+        .nav-links {
+            color: #FFFFFF;
+
+            .nav-link {
+                color: inherit;
+                font-weight: 500;
+                font-size: 1rem;
+                margin-right: 1.5rem;
+                cursor: pointer;
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

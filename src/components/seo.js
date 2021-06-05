@@ -19,6 +19,7 @@ function Seo({ description, lang, meta, title }) {
             title
             description
             author
+            keyword
           }
         }
       }
@@ -39,6 +40,10 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `keywords`,
+          content: site.siteMetadata?.keyword || ``,
         },
         {
           property: `og:title`,
@@ -77,6 +82,7 @@ Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  keyword: ``,
 }
 
 Seo.propTypes = {
@@ -84,6 +90,7 @@ Seo.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  keyword: PropTypes.string,
 }
 
 export default Seo

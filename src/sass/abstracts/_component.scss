@@ -1,0 +1,58 @@
+
+
+.headerText {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+h1.headerText {
+    @media (min-width: 1024px)  {
+        font-size: 4.5rem;
+    }
+    @media (min-width: 640px) {
+        font-size: 3.875rem;
+    }
+}
+
+h2.headerText {
+    @media (min-width: 1280px) {
+        font-size: 3.875rem;
+    }
+    @media (min-width: 640px) {
+        font-size: 2.875rem;
+    }
+}
+
+.siteHero {
+    background: $primary;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    width: 100%;
+    // display: flex;
+    // justify-content: center;
+
+    &__container {
+        position: relative;
+        // width: 90%;
+        // margin: 0 auto;
+    }
+
+    .headerText--container {
+        max-width: 900px;
+        width: 90%;
+        margin: auto;
+        padding-top: 5rem;
+    }
+
+    .headerBottom {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 150px;
+        bottom: -73px;
+        mix-blend-mode: hue;
+        transform: rotateY(180deg);
+    }
+}

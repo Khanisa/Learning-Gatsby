@@ -1,0 +1,99 @@
+//Base
+
+
+//Reset
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline-color: inherit;
+    outline: none;
+}
+
+
+
+html {
+    color: $black;
+}
+
+body {
+    color: $black;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: normal;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+    
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+svg {
+    vertical-align: middle;
+    fill: inherit;
+}
+
+button, .btn {
+    outline: none;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+}
+
+/* Handle on hover */ 
+::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+    opacity: 0;
+}
+
+.tab {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+
+
+
+
+
+
