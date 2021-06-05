@@ -1,6 +1,4 @@
 import * as React from "react";
-// import Icon from "./icon";
-// import Vector from '../assets/images/headerVector.svg';
 
 
 const Hero = ({ heroText, heroImage, heroSrcSet }) => (

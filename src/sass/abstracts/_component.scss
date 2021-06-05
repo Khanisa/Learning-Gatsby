@@ -1,5 +1,18 @@
 
 
+
+//Colors
+.co_primary {
+    color: $primary;
+}
+
+.co_black {
+    color: $black;
+}
+
+
+
+//Text
 .headerText {
     font-family: 'Abril Fatface', cursive;
     text-transform: uppercase;
@@ -24,35 +37,104 @@ h2.headerText {
     }
 }
 
+
+//Hero
 .siteHero {
     background: $primary;
     text-align: center;
     color: #FFFFFF;
     position: relative;
     width: 100%;
-    // display: flex;
-    // justify-content: center;
 
     &__container {
         position: relative;
-        // width: 90%;
-        // margin: 0 auto;
+        width: 91.666667%;
+        margin: auto;
     }
 
     .headerText--container {
         max-width: 900px;
-        width: 90%;
+        width: 91.666667%;
         margin: auto;
         padding-top: 5rem;
+        @media (min-width: 1024px) {
+            width: 83.333333%;
+        }
+    }
+
+    img {
+        width: 100%;
+        position: relative;
+        top: -30px;
     }
 
     .headerBottom {
         position: absolute;
-        z-index: 1;
+        z-index: -1;
         width: 100%;
         height: 150px;
-        bottom: -73px;
+        bottom: -72px;
         mix-blend-mode: hue;
         transform: rotateY(180deg);
+    }
+}
+
+//Job card
+.jobCard {
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(0 0 9px rgba(0,0,0,.1));
+    background-color: rgba(250,250,250, 1);
+
+    &__container {
+        padding: 2rem;
+        @media (min-width: 1280px) {
+            padding: 3rem;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 2.5rem;
+        }
+    }
+
+    &__refNo {
+        display: inline-block;
+        font-size: .75rem;
+        color: #FFFFFF;
+        background: $primary;
+        margin-bottom: .5rem;
+        border-radius: 9999px;
+        @media (min-width: 1280px) {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin: 0;
+            padding-top: .375rem;
+            padding-bottom: .25rem;
+            padding-left: .75rem;
+            padding-right: .75rem;
+        }
+    }
+
+    &__link {
+        width: 91.666667%;
+        color: $black;
+        margin-bottom: .5rem;
+        line-height: 1.375;
+        font-weight: 600;
+        font-size: 1.25rem;
+        display: inline-block;
+
+        @media (min-width: 640px) {
+            font-size: 1.4375rem;
+        }
+    }
+
+    &__location {
+        color: $gray-500;
+        margin-bottom: .75rem;
+        font-size: 1rem;
+        font-weight: 500;
     }
 }

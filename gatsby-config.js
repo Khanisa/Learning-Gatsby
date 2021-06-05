@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Employment Agency in Zurich | iET SA`,
+    title: `iET SA`,
     description: `iET SA are an Employment Agency in Zurich specialising in people-based business solutions, recruiting, staffing, payrolling, project management & training.`,
     keyword: `learn, gatsby`,
     author: `@AnisatYunusa`,
